@@ -1,52 +1,90 @@
-listaDeAulas = [
+const listaDeAulas = [
     {
-        nome: "Aula de Matemática", 
+        nome: "Aula de Frações", 
         categoria: "Matemática"
     },
     {
-        nome: "Aula de Português", 
+        nome: "Aula de Regência", 
         categoria: "Português"
     },
     {
-        nome: "Aula de Inglês", 
+        nome: "Aula de 'to be verb'", 
         categoria: "Inglês"
     },
     {
-        nome: "Aula de História", 
+        nome: "Aula de Descobrimento do Brasil", 
         categoria: "História"
     },
     {
-        nome: "Aula de Geografia", 
-        categoria: "Geografia"
+        nome: "Aula de Equações do 2º grau", 
+        categoria: "Matemática"
     },
     {
-        nome: "Aula de Física", 
-        categoria: "Física"
+        nome: "Aula de Pontuação", 
+        categoria: "Português"
     },
     {
-        nome: "Aula de Química", 
-        categoria: "Química"
+        nome: "Aula de Simple Present", 
+        categoria: "Inglês"
     },
     {
-        nome: "Aula de Biologia", 
-        categoria: "Biologia"
+        nome: "Aula de Geometria", 
+        categoria: "Matemática"
     },
     {
-        nome: "Aula de Artes", 
-        categoria: "Artes"
+        nome: "Aula de Literatura Brasileira", 
+        categoria: "Português"
     },
     {
-        nome: "Aula de Educação Física", 
-        categoria: "Educação Física"
+        nome: "Aula de Números Complexos", 
+        categoria: "Matemática"
     },
     {
-        nome: "Aula de Filosofia", 
-        categoria: "Filosofia"
+        nome: "Aula de Números Imaginários", 
+        categoria: "Matemática"
     },
     {
-        nome: "Aula de Sociologia", 
-        categoria: "Sociologia"
+        nome: "Aula de Revolução Francesa", 
+        categoria: "História"
     }
 ]
 
-export default listaDeAulas;
+const listaDeTutores = [
+    {
+        nome: "João", 
+        disciplina: "Matemática"
+    },
+    {
+        nome: "Maria", 
+        disciplina: "Português"
+    },
+    {
+        nome: "Pedro", 
+        disciplina: "Inglês"
+    },
+    {
+        nome: "Ana", 
+        disciplina: "História"
+    }
+]
+
+const listaDeAlunos = [
+    {
+        nome: "Lucas",
+        idade: 15
+    },
+    {
+        nome: "Beatriz",
+        idade: 14
+    },
+    {
+        nome: "Gabriel",
+        idade: 16
+    },
+    {
+        nome: "Camila",
+        idade: 15
+    }
+]
+
+export { listaDeAulas, listaDeTutores, listaDeAlunos };
