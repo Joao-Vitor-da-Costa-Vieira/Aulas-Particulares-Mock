@@ -5,3 +5,6 @@ Preço - Valor da aula por hora.
 Distância - Os locais no qual o Tutor pode atuar.
 Contribuinte - Tutores.
 Visitante - Aluno precisando de aulas de reforço.
+
+Perqunta que o aplicativo responde:
+"Qual Tutor está disponível para dar aulas de determinadas disciplinas, sob circunstâncias especifícas?" 
