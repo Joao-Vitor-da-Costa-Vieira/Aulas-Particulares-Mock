@@ -1,0 +1,7 @@
+Produto - Aulas particulares de reforço.
+Oferta - Registro de Disponibilidade do Tutor, com horário, local, disciplina e valor por hora.
+Mercado - Tutor Disponível.
+Preço - Valor da aula por hora.
+Distância - Os locais no qual o Tutor pode atuar.
+Contribuinte - Tutores.
+Visitante - Aluno precisando de aulas de reforço.
