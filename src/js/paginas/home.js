@@ -1,5 +1,5 @@
 import dadosMockados from '../dadosMockados/dadosMockados'
-function buscar(app){
+function home(app){
     app.innerHTML = `
         
     `
