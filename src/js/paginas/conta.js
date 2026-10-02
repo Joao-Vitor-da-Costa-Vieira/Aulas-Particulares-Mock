@@ -1,4 +1,4 @@
-import dadosMockados from '../dadosMockados/dadosMockados'
+import listaDeAulas from '../dadosMockados/dadosMockados'
 function conta(app){
     app.innerHTML = `
         

@@ -1,4 +1,4 @@
-import dadosMockados from '../dadosMockados/dadosMockados'
+import listaDeAulas from '../dadosMockados/dadosMockados'
 function publicar(app){
     app.innerHTML = `
         

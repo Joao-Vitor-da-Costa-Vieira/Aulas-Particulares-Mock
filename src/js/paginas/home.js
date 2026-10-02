@@ -1,4 +1,5 @@
-import dadosMockados from '../dadosMockados/dadosMockados'
+import resultados from './resultados'
+
 function home(app){
     app.innerHTML = `
         
@@ -10,11 +11,11 @@ function adicionarEvento(app){
     const botaoBusca = document.getElementById("btn-busca")
     const listaCategoria = document.querySelectorAll(".lista-categoria")
     botaoBusca.addEventListener("click",()=>{
-       produtos.pagina(app)
+       resultados.pagina(app)
     })
     
     listaCategoria.forEach(item => item.addEventListener("click", ()=>{
-        produtos.pagina(app, item.textContent.trim())
+        resultados.pagina(app, item.textContent.trim())
     }))
 }
 
