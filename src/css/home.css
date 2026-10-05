@@ -28,15 +28,13 @@
     position: absolute;
     color: var(--cor-terciaria);
     padding-left: var(--space-xs);
-    width: 30px;
-    height: 30px;
+    flex: 0 0 30px;
     border-radius: 3px 0 0 3px;
 }
 
 #btn-home{
     background-color: var(--cor-primaria);
-    height: 30px;
-    width: 30px;
+    flex: 0 0 30px;
 }
 
 .categorias-home{
@@ -53,6 +51,7 @@
 .lista-categoria{
     border: 1px solid var(--cor-terciaria);
     border-radius: 5px;
+    flex: 0 0 auto;
     width: 170px;
     list-style-type: none;
     height: 40px;
