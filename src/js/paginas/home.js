@@ -24,22 +24,22 @@ function home(app){
                 <p>Categoria</p>
                 <ul class="categoria-lista">
                     <li class="lista-categoria">
-                        Mercearia
+                        Matemática
                     </li>
                     <li class="lista-categoria">
-                        Carnes
+                        Português
                     </li>
                     <li class="lista-categoria">
-                        Hortifrúti
+                        Inglês
                     </li>
                     <li class="lista-categoria">
-                        Bebidas
+                        História
                     </li>
                     <li class="lista-categoria">
-                        Limpeza
+                        Fisíca
                     </li>
                     <li class="lista-categoria">
-                        Higiene
+                        Química
                     </li>
                 </ul>
             </div>
