@@ -8,7 +8,7 @@ function detalhe(app){
 
 export default {
     url: "#detalhe",
-    label: "Detalhe",
+    label: "Detalhes",
     icon: "info",
     pagina: detalhe
 }

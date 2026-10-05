@@ -14,7 +14,7 @@ const lista = categoria ? listaDeAulas.filter(aula => aula.categoria === categor
 
 export default {
     url: "#resultados",
-    label: "Resultados",
+    label: "",
     icon: "search",
     pagina: resultados
 }

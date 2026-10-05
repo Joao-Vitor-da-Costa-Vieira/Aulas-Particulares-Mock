@@ -21,7 +21,7 @@ function adicionarEvento(app){
 
 export default {
     url: "#home",
-    label: "home",
+    label: "Home",
     icon: "home",
     pagina: home
 }

@@ -8,7 +8,7 @@ function rotaInexistente(app){
 
 export default {
     url: "#rotaInexistente",
-    label: "Rota Inexistente",
+    label: "",
     icon: "error",
     pagina: rotaInexistente
 }
