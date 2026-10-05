@@ -1,10 +1,10 @@
 @import url('./tokens.css');
 
 .container-home{
-    display: flexbox;
+    display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 10px;
+    gap: var(--space-ml);
+    padding: var(--space-ms);
 }
 
 .subtitulo-home{
@@ -19,7 +19,7 @@
 #input-home{
     width: 90%;
     height: 30px;
-    padding-left: 26px;
+    padding-left: var(--space-l);
     box-sizing: border-box;
     border-radius: 10px 0 0 10px;
 }
@@ -27,7 +27,7 @@
 #icone-home{
     position: absolute;
     color: var(--cor-terciaria);
-    padding-left: 3px;
+    padding-left: var(--space-xs);
     width: 30px;
     height: 30px;
     border-radius: 3px 0 0 3px;
@@ -42,22 +42,22 @@
 .categorias-home{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--space-ms);
 }
 .categoria-lista{
     display: grid;
-    grid-template-columns: 200px repeat(auto-fill, 200px);
-    gap:5px;
+    grid-template-columns: 170px repeat(auto-fill, 170px);
+    gap:var(--space-s);
     list-style-type: none;
 }
 .lista-categoria{
     border: 1px solid var(--cor-terciaria);
     border-radius: 5px;
-    width: 200px;
+    width: 170px;
     list-style-type: none;
     height: 40px;
     text-align:center;
-    padding: 10px;
+    padding: var(--space-ms);
     cursor: pointer;
 }
 

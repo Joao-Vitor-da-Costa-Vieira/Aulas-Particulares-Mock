@@ -1,7 +1,18 @@
 :root{
+    /* Cores */
     --branco: #fff;
     --preto: #000;
     --cor-primaria: #1E90FF;
     --cor-secundaria: #f0f0f0;
     --cor-terciaria: #ccc;
+
+    /* Espaçamento */
+    --space-xs: 3px;
+    --space-s: 5px;
+    --space-ms: 10px;
+    --space-m: 15px;
+    --space-ml: 20px;
+    --space-l: 26px;
+    --space-xl: 30px;
+
 }
