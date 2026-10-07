@@ -1,5 +1,6 @@
 import listaDeAulas from '../dadosMockados/dadosMockados'
 import sessao from '../sessao/sessao'
+import detalhe from './detalhe'
 
 function resultados(app, categoria){
     
@@ -15,6 +16,7 @@ const lista = categoria ? listaDeAulas.filter(aula => aula.categoria === categor
             <h1>${categoria ? categoria : "Todos as aulas"}</h1>
             ${ 
                 lista.length === 0 ? "<p>Nenhuma aula nesta categoria nesta semana.</p>" : lista.map(aula=>`<div class="cartao">
+                    <p class="hidden">${aula.id}</p>
                     <h2>${aula.nome}</h2>
                     <p>${aula.local}</p>
                     <p>${aula.horario}</p>
@@ -24,6 +26,16 @@ const lista = categoria ? listaDeAulas.filter(aula => aula.categoria === categor
         location.hash = "#resultados"
         adicionarEvento(app)
     }
+}
+
+function adicionarEvento(app){
+    const cartoes = app.querySelectorAll(".cartao")
+    cartoes.forEach(cartao => {
+        cartao.addEventListener("click", () => {
+            const id = cartao.querySelector("p").textContent
+            detalhe.pagina(app, id)
+        })
+    })
 }
 
 export default {
