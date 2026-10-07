@@ -1,3 +1,4 @@
+
 function navbar(item_menu){
 const navbar = document.getElementById('navbar');
 navbar.innerHTML = `
@@ -22,6 +23,17 @@ navbar.innerHTML = `
 </button>
 `;
 
+}
+
+function adicionarEvento(app){
+    const navbarItems = document.querySelectorAll('.navbar-item');
+    navbarItems.forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault();
+            const url = item.getAttribute('href');
+            window.location.hash = url;
+        });
+    });
 }
 
 export { navbar };

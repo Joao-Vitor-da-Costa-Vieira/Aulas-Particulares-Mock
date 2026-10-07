@@ -24,7 +24,7 @@ function detalhe(app, id){
 
 export default {
     url: "#detalhe",
-    label: "Detalhes",
+    label: "",
     icon: "info",
     pagina: detalhe
 }
