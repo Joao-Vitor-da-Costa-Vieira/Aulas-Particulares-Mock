@@ -1,9 +1,21 @@
 import listaDeAulas from '../dadosMockados/dadosMockados'
+
+import sessao from '../sessao/sessao'
+
 function detalhe(app){
-    app.innerHTML = `
+    if(sessao.usuarioTipo === "professor") {
+        app.innerHTML = `
+
+        `
+
+        adicionarEvento(app)
+    } else {
+        app.innerHTML = `
+            
+        `
         
-    `
-    adicionarEvento(app)
+        adicionarEvento(app)
+    }
 }
 
 export default {

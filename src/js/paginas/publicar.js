@@ -1,9 +1,16 @@
 import listaDeAulas from '../dadosMockados/dadosMockados'
 function publicar(app){
-    app.innerHTML = `
-        
-    `
-    adicionarEvento(app)
+    if(sessao.usuarioTipo === "professor") {
+        app.innerHTML = `
+            
+        `
+        adicionarEvento(app)
+    } else {
+        app.innerHTML = `
+            
+        `
+        adicionarEvento(app)
+    }
 }
 
 export default {
