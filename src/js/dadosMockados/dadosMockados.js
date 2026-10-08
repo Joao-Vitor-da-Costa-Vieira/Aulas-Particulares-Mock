@@ -113,22 +113,34 @@ export const listaDeTutores = [
     {
         id: 1,
         nome: "João", 
-        disciplina: "Matemática"
+        disciplina: "Matemática",
+        idade: 30,
+        horasLecionadas: 120,
+        ganhos: 6000.00
     },
     {
         id: 2,
         nome: "Maria", 
-        disciplina: "Português"
+        disciplina: "Português",
+        idade: 28,
+        horasLecionadas: 80,
+        ganhos: 4000.00
     },
     {
         id: 3,
         nome: "Pedro", 
-        disciplina: "Inglês"
+        disciplina: "Inglês",
+        idade: 35,
+        horasLecionadas: 100,
+        ganhos: 5000.00
     },
     {
         id: 4,
         nome: "Ana", 
-        disciplina: "História"
+        disciplina: "História",
+        idade: 32,
+        horasLecionadas: 150,
+        ganhos: 7500.00
     }
 ]
 
@@ -136,21 +148,29 @@ export const listaDeAlunos = [
     {
         id: 1,
         nome: "Lucas",
-        idade: 15
+        idade: 15,
+        numeroDeAulas: 5,
+        horasDeEstudo: 10
     },
     {
         id: 2,
         nome: "Beatriz",
-        idade: 14
+        idade: 14,
+        numeroDeAulas: 3,
+        horasDeEstudo: 6
     },
     {
         id: 3,
         nome: "Gabriel",
-        idade: 16
+        idade: 16,
+        numeroDeAulas: 4,
+        horasDeEstudo: 8
     },
     {
         id: 4,
         nome: "Camila",
-        idade: 15
+        idade: 15,
+        numeroDeAulas: 2,
+        horasDeEstudo: 4
     }
 ]
