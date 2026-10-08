@@ -23,8 +23,6 @@ const lista = categoria ? listaDeAulas.filter(aula => aula.categoria === categor
                 </div>`).join("") 
             }`
         adicionarEvento(app)
-        location.hash = "#resultados"
-        adicionarEvento(app)
     }
 }
 

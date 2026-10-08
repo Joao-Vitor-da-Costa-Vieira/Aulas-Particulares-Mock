@@ -7,9 +7,12 @@ navbar(mapaderotas)
 
 function renderizarPagina() {
     const hash = window.location.hash || '#home'
-    const rota  = mapaderotas.find(tela => tela.url === hash)
+    const [rotaUrl, queryString] = hash.split('?')
+    const params = new URLSearchParams(queryString || '')
+
+    const rota = mapaderotas.find(tela => tela.url === rotaUrl)
     if (rota) {
-        rota.pagina(app)
+        rota.pagina(app, params.get('cat'))
     }
 }
 

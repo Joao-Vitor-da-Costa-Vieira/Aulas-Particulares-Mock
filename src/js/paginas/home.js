@@ -73,7 +73,8 @@ function adicionarEvento(app){
     })
     
     listaCategoria.forEach(item => item.addEventListener("click", ()=>{
-        resultados.pagina(app, item.textContent.trim())
+            const cat = item.textContent.trim()
+            window.location.hash = `#resultados?cat=${encodeURIComponent(cat)}`
     }))
 }
 
