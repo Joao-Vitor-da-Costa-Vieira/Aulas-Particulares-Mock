@@ -1,6 +1,7 @@
 import { listaDeAulas, listaDeTutores } from '../dadosMockados/dadosMockados'
 
-import sessao from '../sessao/sessao'
+import sessaoModule from '../sessao/sessao'
+const { sessao } = sessaoModule
 
 function detalhe(app, id){
     const aula = listaDeAulas.find(a => a.id === parseInt(id))

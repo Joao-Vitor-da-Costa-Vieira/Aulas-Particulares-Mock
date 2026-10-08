@@ -1,5 +1,6 @@
 import { listaDeAulas } from '../dadosMockados/dadosMockados'
-import sessao from '../sessao/sessao'
+import sessaoModule from '../sessao/sessao'
+const { sessao } = sessaoModule
 
 function publicar(app){
     if(sessao.usuarioTipo === "professor") {

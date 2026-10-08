@@ -1,5 +1,6 @@
 import { listaDeAulas, listaDeTutores } from '../dadosMockados/dadosMockados'
-import sessao from '../sessao/sessao'
+import sessaoModule from '../sessao/sessao'
+const { sessao } = sessaoModule
 import detalhe from './detalhe'
 
 function resultados(app, { categoria, query } = {}) {

@@ -1,6 +1,7 @@
 import resultados from './resultados'
 
-import sessao from '../sessao/sessao'
+import sessaoModule from '../sessao/sessao'
+const { sessao } = sessaoModule
 
 function home(app){
 
