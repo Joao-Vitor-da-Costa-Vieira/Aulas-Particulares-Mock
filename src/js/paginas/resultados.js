@@ -16,12 +16,6 @@ function resultados(app, { categoria, query } = {}) {
             return nomeAula.includes(termo) || nomeTutor.includes(termo)
         })
 
-    if (sessao.usuarioTipo === "professor") {
-        app.innerHTML = ``
-        adicionarEvento(app)
-        return
-    }
-
     const titulo = termo
         ? `Resultados para "${query}"`
         : categoria

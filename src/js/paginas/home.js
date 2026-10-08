@@ -8,6 +8,51 @@ function home(app){
     if(sessao.usuarioTipo === "professor") {
         app.innerHTML = `
             <div class="container-home">
+                <div class="home-title">
+                    <h2 class="titulo-home">Aulas Disponíveis</h2>
+                    <p class="subtitulo-home"> Procurando algo mais especifíco?</p>
+                </div>
+                <div class="grupo-input">
+                <label for="input-home"><i data-lucide="search" id="icone-home"></i> </label>
+                    <input 
+                        type="text" 
+                        id="input-home" 
+                        placeholder="Aulas ou Professores"
+                        aria-label="campo de busca de aulas ou professores"
+                    >
+                    <button id="btn-home"> 
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    
+                </div>
+                <div class="home-atencao-div">
+                    <p class="home-atencao">Todas as Aulas enviadas na Semana</p>
+                </div>
+                <div class="categorias-home">
+                    <p class="subtitulo-home">Categoria</p>
+                    <ul class="categoria-lista">
+                        <li class="lista-categoria">
+                            Matemática
+                        </li>
+                        <li class="lista-categoria">
+                            Português
+                        </li>
+                        <li class="lista-categoria">
+                            Inglês
+                        </li>
+                        <li class="lista-categoria">
+                            História
+                        </li>
+                        <li class="lista-categoria">
+                            Fisíca
+                        </li>
+                        <li class="lista-categoria">
+                            Química
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
             `
 
             adicionarEvento(app)
