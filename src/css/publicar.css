@@ -1,0 +1,120 @@
+.publicar-container {
+    padding: var(--space-ml) var(--space-m);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+}
+
+/* Header */
+.publicar-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.publicar-titulo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--preto);
+}
+
+.publicar-subtitulo {
+    font-size: 14px;
+    color: var(--cor-terciaria);
+}
+
+/* Form */
+.publicar-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+}
+
+.publicar-campo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.publicar-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--preto);
+}
+
+.publicar-input {
+    width: 100%;
+    padding: var(--space-ms) var(--space-m);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 10px;
+    background-color: var(--branco);
+    color: var(--preto);
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.publicar-input::placeholder {
+    color: var(--cor-terciaria);
+}
+
+.publicar-input:focus {
+    border-color: var(--cor-primaria);
+}
+
+/* Mensagem */
+.publicar-mensagem {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    border-radius: 10px;
+    display: none;
+}
+
+.publicar-mensagem-aprovacao,
+.publicar-mensagem-recusa {
+    display: block;
+    padding: var(--space-ms) var(--space-m);
+}
+
+.publicar-mensagem-aprovacao {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+}
+
+.publicar-mensagem-recusa {
+    background-color: var(--cor-secundaria);
+    color: var(--preto);
+    border: 1px solid var(--cor-terciaria);
+}
+
+/* Botão */
+.publicar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-s);
+    padding: var(--space-m);
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.publicar-btn:hover {
+    background-color: var(--cor-primaria-escura);
+}
+
+.publicar-btn:active {
+    transform: scale(0.98);
+}
+
+.publicar-btn i {
+    flex: 0 0 18px;
+}
