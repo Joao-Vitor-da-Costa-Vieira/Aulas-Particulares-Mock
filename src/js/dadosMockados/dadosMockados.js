@@ -155,4 +155,4 @@ const listaDeAlunos = [
     }
 ]
 
-export { listaDeAulas, listaDeTutores, listaDeAlunos };
+export default { listaDeAulas, listaDeTutores, listaDeAlunos };

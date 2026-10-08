@@ -10,21 +10,23 @@
     bottom: 0;
     flex: 0 0 auto;
     width:380px;
-    height: 60px;
-    border-top: 1px solid var(--cor-terciaria);
+    height: 70px;
+    border-top: 1px solid var(--cor-primaria);
+    background-color: var(--cor-primaria);
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    color: var(--branco);
     padding-bottom: var(--space-m);
-    gap: var(--space-xl);
+    gap: var(--space-xxl);
 }
 .navbar-item{
     text-decoration: none;
-    color: var(--cor-terciaria);
+    color: var(--branco);
 }
 .navbar-item__icon{
     align-items: center;
@@ -35,5 +37,5 @@
 }
 
 .navbar-item:hover{
-    border-top: 2px solid var(--cor-primaria);
+    border-top: 2px solid var(--cor-secundaria);
 }

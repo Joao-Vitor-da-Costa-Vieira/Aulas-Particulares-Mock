@@ -6,8 +6,8 @@ import resultados from '../paginas/resultados.js'
 import rotaInexistente from '../paginas/rotaInexistente.js'
 
 const mapaderotas = [
-    home,
     conta,
+    home,
     detalhe,
     publicar,
     resultados,

@@ -16,6 +16,6 @@ function publicar(app){
 export default {
     url: "#publicar",
     label: "Publicar",
-    icon: "add",
+    icon: "plus",
     pagina: publicar
 }

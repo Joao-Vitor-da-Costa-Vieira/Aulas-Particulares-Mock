@@ -23,6 +23,8 @@ navbar.innerHTML = `
 </button>
 `;
 
+adicionarEvento(navbar)
+
 }
 
 function adicionarEvento(app){

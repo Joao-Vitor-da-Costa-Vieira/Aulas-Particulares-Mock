@@ -1,5 +1,6 @@
-import listaDeAulas from '../dadosMockados/dadosMockados'
-import { sessao, changeUsuarioTipo } from '../sessao/sessao'
+import  listaDeAulas  from "../dadosMockados/dadosMockados"
+import  sessao from "../sessao/sessao"
+import  changeUsuarioTipo  from "../sessao/sessao"
 
 function conta(app){
     if(sessao.usuarioTipo === "professor") {
@@ -25,6 +26,6 @@ function alterarUsuario(app){
 export default {
     url: "#conta",
     label: "Conta",
-    icon: "person",
+    icon: "user-round",
     pagina: conta
 }
