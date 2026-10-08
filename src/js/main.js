@@ -13,6 +13,7 @@ function renderizarPagina() {
     const rota = mapaderotas.find(tela => tela.url === rotaUrl)
     if (rota) {
         rota.pagina(app, params.get('cat'))
+        createIcons({ icons });
     }
 }
 
