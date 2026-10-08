@@ -7,6 +7,7 @@
     list-style-type: none;
     gap: 12%;
     position: fixed;
+    z-index: 100;
     bottom: 0;
     flex: 0 0 auto;
     width:380px;

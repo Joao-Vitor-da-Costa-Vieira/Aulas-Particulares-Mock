@@ -13,3 +13,9 @@ body {
   height: 100dvh;
   
 }
+
+#app {
+    padding-bottom: calc(70px);
+    min-height: 100dvh;
+    background-color: var(--branco);
+}
