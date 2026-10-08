@@ -14,8 +14,10 @@ function home(app){
         app.innerHTML = `
 
             <div class="container-home">
-                <h2>Radar de Tutores</h2>
-                <p class="subtitulo-home"> O que Você quer Comprar mais barato?</p>
+                <div class="home-title">
+                    <h2 class="titulo-home">Aulas Disponíveis</h2>
+                    <p class="subtitulo-home"> Procurando algo mais especifíco?</p>
+                </div>
                 <div class="grupo-input">
                 <label for="input-home"><i data-lucide="search" id="icone-home"></i> </label>
                     <input 
@@ -29,9 +31,11 @@ function home(app){
                     </button>
                     
                 </div>
-                <p class="home-atencao">Preços da semana de 10 a 16 de agosto, enviado por que mestá no mercado</p>
+                <div class="home-atencao-div">
+                    <p class="home-atencao">Todas as Aulas enviadas na Semana</p>
+                </div>
                 <div class="categorias-home">
-                    <p>Categoria</p>
+                    <p class="subtitulo-home">Categoria</p>
                     <ul class="categoria-lista">
                         <li class="lista-categoria">
                             Matemática

@@ -27,6 +27,7 @@
 .navbar-item{
     text-decoration: none;
     color: var(--branco);
+    font-family: 'system-ui', sans-serif;
 }
 .navbar-item__icon{
     align-items: center;
