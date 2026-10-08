@@ -1,18 +1,25 @@
 import listaDeAulas from '../dadosMockados/dadosMockados'
-import sessao from '../sessao/sessao'
+import { sessao, changeUsuarioTipo } from '../sessao/sessao'
 
 function conta(app){
     if(sessao.usuarioTipo === "professor") {
         app.innerHTML = `
             
         `
-        adicionarEvento(app)
+        alterarUsuario(app)
     } else {
         app.innerHTML = `
             
         `
-        adicionarEvento(app)
+        alterarUsuario(app)
     }
+}
+
+function alterarUsuario(app){
+    const botao = app.querySelector("#botao-sair")
+    botao.addEventListener("click", function(){
+        changeUsuarioTipo()
+    })
 }
 
 export default {
