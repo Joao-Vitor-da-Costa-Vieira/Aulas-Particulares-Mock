@@ -1,4 +1,4 @@
-import listaDeAulas from '../dadosMockados/dadosMockados'
+import { listaDeAulas } from '../dadosMockados/dadosMockados'
 function rotaInexistente(app){
     app.innerHTML = `
         

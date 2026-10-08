@@ -1,4 +1,4 @@
-import listaDeAulas from '../dadosMockados/dadosMockados'
+import { listaDeAulas } from '../dadosMockados/dadosMockados'
 function publicar(app){
     if(sessao.usuarioTipo === "professor") {
         app.innerHTML = `

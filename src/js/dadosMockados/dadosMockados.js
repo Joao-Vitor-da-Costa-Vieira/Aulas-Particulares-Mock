@@ -1,4 +1,4 @@
-const listaDeAulas = [
+export const listaDeAulas = [
     {
         id: 1,
         nome: "Aula de Frações", 
@@ -109,7 +109,7 @@ const listaDeAulas = [
     }
 ]
 
-const listaDeTutores = [
+export const listaDeTutores = [
     {
         id: 1,
         nome: "João", 
@@ -132,7 +132,7 @@ const listaDeTutores = [
     }
 ]
 
-const listaDeAlunos = [
+export const listaDeAlunos = [
     {
         id: 1,
         nome: "Lucas",
@@ -154,5 +154,3 @@ const listaDeAlunos = [
         idade: 15
     }
 ]
-
-export default { listaDeAulas, listaDeTutores, listaDeAlunos };
