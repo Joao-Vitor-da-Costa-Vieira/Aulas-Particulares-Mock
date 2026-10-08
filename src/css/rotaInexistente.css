@@ -1,0 +1,69 @@
+.rota-inexistente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-m);
+    padding: var(--space-xxl) var(--space-m);
+    min-height: 60dvh;
+    text-align: center;
+}
+
+.rota-inexistente-icone {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-s);
+}
+
+.rota-inexistente-icone i {
+    width: 44px;
+    height: 44px;
+}
+
+.rota-inexistente-titulo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--preto);
+}
+
+.rota-inexistente-texto {
+    font-size: 14px;
+    color: var(--cor-terciaria);
+    line-height: 1.4;
+    max-width: 260px;
+}
+
+.rota-inexistente-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-s);
+    padding: var(--space-m) var(--space-ml);
+    margin-top: var(--space-s);
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.rota-inexistente-btn:hover {
+    background-color: var(--cor-primaria-escura);
+}
+
+.rota-inexistente-btn:active {
+    transform: scale(0.98);
+}
+
+.rota-inexistente-btn i {
+    flex: 0 0 18px;
+}
