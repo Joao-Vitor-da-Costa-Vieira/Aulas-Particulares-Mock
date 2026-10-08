@@ -1,10 +1,19 @@
-import  { listaDeAulas } from '../dadosMockados/dadosMockados'
+import  { listaDeAulas, listaDeTutores } from '../dadosMockados/dadosMockados'
 import sessao from '../sessao/sessao'
 import detalhe from './detalhe'
 
-function resultados(app, categoria){
-    
-const lista = categoria ? listaDeAulas.filter(aula => aula.categoria === categoria) : listaDeAulas
+function resultados(app, {categoria, query}){
+
+    const termo = query?.trim().toLowerCase() ?? ''
+    const lista = categoria ? listaDeAulas
+        .filter(aula => aula.categoria === categoria) : listaDeAulas
+        .filter(aula => {
+            if (!termo) return true
+            const tutor = listaDeTutores.find(t => t.id === aula.tutorId)
+            const nomeTutor = tutor?.nome.toLowerCase() ?? ''
+            const nomeAula  = aula.nome.toLowerCase()
+            return nomeAula.includes(termo) || nomeTutor.includes(termo)
+    })
 
     if(sessao.usuarioTipo === "professor") {
         app.innerHTML = `
@@ -12,8 +21,14 @@ const lista = categoria ? listaDeAulas.filter(aula => aula.categoria === categor
 
         adicionarEvento(app)
     } else {
+        const titulo = termo
+        ? `Resultados para "${query}"`
+        : categoria
+            ? categoria
+            : "Todas as aulas"
+
         app.innerHTML = `
-            <h1>${categoria ? categoria : "Todos as aulas"}</h1>
+            <h1>${titulo}</h1>
             ${ 
                 lista.length === 0 ? "<p>Nenhuma aula nesta categoria nesta semana.</p>" : lista.map(aula=>`<div class="cartao">
                     <p class="hidden">${aula.id}</p>

@@ -67,7 +67,17 @@ function home(app){
 
 function adicionarEvento(app){
     const botaoHome = document.getElementById("btn-home")
+    const inputHome = document.getElementById("input-home")
     const listaCategoria = document.querySelectorAll(".lista-categoria")
+
+    function buscar() {
+        const termo = inputHome.value.trim()
+        if (!termo) return
+        window.location.hash = `#resultados?query=${encodeURIComponent(termo)}`
+    }
+
+    botaoHome.addEventListener("click", buscar)
+
     botaoHome.addEventListener("click",()=>{
        resultados.pagina(app)
     })

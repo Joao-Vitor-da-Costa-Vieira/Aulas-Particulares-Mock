@@ -12,7 +12,10 @@ function renderizarPagina() {
 
     const rota = mapaderotas.find(tela => tela.url === rotaUrl)
     if (rota) {
-        rota.pagina(app, params.get('cat'))
+        rota.pagina(app, {
+            categoria: params.get('cat'),
+            query: params.get('query'),
+        })
         createIcons({ icons });
     }
 }
