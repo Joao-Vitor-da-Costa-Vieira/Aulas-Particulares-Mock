@@ -21,6 +21,36 @@ Contribuinte - Tutores.
 Visitante - Aluno precisando de aulas de reforço.
 
 R3.
+src/
+    css/
+        base.css
+        conta.css
+        detalhe.css
+        home.css
+        navbar.css
+        publicar.css
+        resultados.css
+        rotaInexistente.css
+        style.css - Arquivo que serve de proxy para os outros arquivos do programa
+        tokens.css - Arquivo com cores e espaçamentos padrão do app definidos
+    js/
+        dadosMockados/
+            dadosMockados.js - Arquivo com os dados Mockados do app
+        navbar/
+            navbar.js - Função da Navbar
+        paginas/
+            conta.js
+            detalhe.js
+            home.js
+            publicar.js
+            resultados.js
+            rotaInexistente.js
+        rotas/
+            rotas.js - Arquivo que define e exporta as rotas das páginas do app
+        sessao/
+            sessao.js - Arquivo que define a sessão do Usuário
+        main.js - Arquivo base do app, definindo o script a partir do index
+    index.html - Página inicial do app, carrega direto na home
 
 R4. Decisões:
 1. Separar parte das páginas entre alunos e professores já que ambos não procuram e nem usam as mesmas funções da aplicação, necessitando interfaces diferentes para cada tipo de usuário do aplicativo.
